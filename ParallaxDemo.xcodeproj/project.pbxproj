@@ -18,9 +18,16 @@
 		2843295017E20F3600213E2F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2843294F17E20F3600213E2F /* Default-568h@2x.png */; };
 		2843295317E20F3600213E2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2843295217E20F3600213E2F /* ViewController.m */; };
 		2843295617E20F3600213E2F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2843295417E20F3600213E2F /* ViewController.xib */; };
+		2843295F17E20F7500213E2F /* UIScrollView+ParallaxEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2843295E17E20F7500213E2F /* UIScrollView+ParallaxEffect.m */; };
+		2843296617E213B800213E2F /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 2843296517E213B800213E2F /* UIView+Util.m */; };
+		28FC6EDD17E2A1FF00EC68C6 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FC6EDC17E2A1FF00EC68C6 /* bg@2x.png */; };
+		28FC6EE217E2AFDA00EC68C6 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6EE017E2AFDA00EC68C6 /* DemoViewController.m */; };
+		28FC6EE317E2AFDA00EC68C6 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28FC6EE117E2AFDA00EC68C6 /* DemoViewController.xib */; };
+		3E40158C2DC542628E47A0A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C78015621814E6CBFDDF7A3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C78015621814E6CBFDDF7A3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2843293617E20F3600213E2F /* ParallaxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2843293917E20F3600213E2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2843293B17E20F3600213E2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +44,16 @@
 		2843295117E20F3600213E2F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2843295217E20F3600213E2F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2843295517E20F3600213E2F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		2843295D17E20F7500213E2F /* UIScrollView+ParallaxEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ParallaxEffect.h"; sourceTree = "<group>"; };
+		2843295E17E20F7500213E2F /* UIScrollView+ParallaxEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ParallaxEffect.m"; sourceTree = "<group>"; };
+		2843296017E20F9800213E2F /* CategoryPropertyUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryPropertyUtil.h; sourceTree = "<group>"; };
+		2843296417E213B800213E2F /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
+		2843296517E213B800213E2F /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
+		28FC6EDC17E2A1FF00EC68C6 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		28FC6EDF17E2AFDA00EC68C6 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		28FC6EE017E2AFDA00EC68C6 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		28FC6EE117E2AFDA00EC68C6 /* DemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoViewController.xib; sourceTree = "<group>"; };
+		EB7F01EEDA044539B474474B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +64,7 @@
 				2843293A17E20F3600213E2F /* UIKit.framework in Frameworks */,
 				2843293C17E20F3600213E2F /* Foundation.framework in Frameworks */,
 				2843293E17E20F3600213E2F /* CoreGraphics.framework in Frameworks */,
+				3E40158C2DC542628E47A0A5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +77,7 @@
 				2843293F17E20F3600213E2F /* ParallaxDemo */,
 				2843293817E20F3600213E2F /* Frameworks */,
 				2843293717E20F3600213E2F /* Products */,
+				EB7F01EEDA044539B474474B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +95,7 @@
 				2843293917E20F3600213E2F /* UIKit.framework */,
 				2843293B17E20F3600213E2F /* Foundation.framework */,
 				2843293D17E20F3600213E2F /* CoreGraphics.framework */,
+				1C78015621814E6CBFDDF7A3 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,11 +103,11 @@
 		2843293F17E20F3600213E2F /* ParallaxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2843296717E2149600213E2F /* Helper */,
+				2843295C17E20F4300213E2F /* UIScrollView+ParallaxEffect */,
 				2843294817E20F3600213E2F /* AppDelegate.h */,
 				2843294917E20F3600213E2F /* AppDelegate.m */,
-				2843295117E20F3600213E2F /* ViewController.h */,
-				2843295217E20F3600213E2F /* ViewController.m */,
-				2843295417E20F3600213E2F /* ViewController.xib */,
+				28FC6EDE17E2AFBB00EC68C6 /* Demo */,
 				2843294017E20F3600213E2F /* Supporting Files */,
 			);
 			path = ParallaxDemo;
@@ -96,6 +116,7 @@
 		2843294017E20F3600213E2F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				28FC6EDC17E2A1FF00EC68C6 /* bg@2x.png */,
 				2843294117E20F3600213E2F /* ParallaxDemo-Info.plist */,
 				2843294217E20F3600213E2F /* InfoPlist.strings */,
 				2843294517E20F3600213E2F /* main.m */,
@@ -107,6 +128,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2843295C17E20F4300213E2F /* UIScrollView+ParallaxEffect */ = {
+			isa = PBXGroup;
+			children = (
+				2843295D17E20F7500213E2F /* UIScrollView+ParallaxEffect.h */,
+				2843295E17E20F7500213E2F /* UIScrollView+ParallaxEffect.m */,
+			);
+			name = "UIScrollView+ParallaxEffect";
+			sourceTree = "<group>";
+		};
+		2843296717E2149600213E2F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2843296017E20F9800213E2F /* CategoryPropertyUtil.h */,
+				2843296417E213B800213E2F /* UIView+Util.h */,
+				2843296517E213B800213E2F /* UIView+Util.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		28FC6EDE17E2AFBB00EC68C6 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				2843295117E20F3600213E2F /* ViewController.h */,
+				2843295217E20F3600213E2F /* ViewController.m */,
+				2843295417E20F3600213E2F /* ViewController.xib */,
+				28FC6EDF17E2AFDA00EC68C6 /* DemoViewController.h */,
+				28FC6EE017E2AFDA00EC68C6 /* DemoViewController.m */,
+				28FC6EE117E2AFDA00EC68C6 /* DemoViewController.xib */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2843295917E20F3600213E2F /* Build configuration list for PBXNativeTarget "ParallaxDemo" */;
 			buildPhases = (
+				8CF06886B59645419E894638 /* Check Pods Manifest.lock */,
 				2843293217E20F3600213E2F /* Sources */,
 				2843293317E20F3600213E2F /* Frameworks */,
 				2843293417E20F3600213E2F /* Resources */,
+				49C9012C5D20450BADBFBBFD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,10 +218,45 @@
 				2843294E17E20F3600213E2F /* Default@2x.png in Resources */,
 				2843295017E20F3600213E2F /* Default-568h@2x.png in Resources */,
 				2843295617E20F3600213E2F /* ViewController.xib in Resources */,
+				28FC6EDD17E2A1FF00EC68C6 /* bg@2x.png in Resources */,
+				28FC6EE317E2AFDA00EC68C6 /* DemoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49C9012C5D20450BADBFBBFD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CF06886B59645419E894638 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2843293217E20F3600213E2F /* Sources */ = {
@@ -176,6 +266,9 @@
 				2843294617E20F3600213E2F /* main.m in Sources */,
 				2843294A17E20F3600213E2F /* AppDelegate.m in Sources */,
 				2843295317E20F3600213E2F /* ViewController.m in Sources */,
+				2843295F17E20F7500213E2F /* UIScrollView+ParallaxEffect.m in Sources */,
+				2843296617E213B800213E2F /* UIView+Util.m in Sources */,
+				28FC6EE217E2AFDA00EC68C6 /* DemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +352,7 @@
 		};
 		2843295A17E20F3600213E2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB7F01EEDA044539B474474B /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParallaxDemo/ParallaxDemo-Prefix.pch";
@@ -270,6 +364,7 @@
 		};
 		2843295B17E20F3600213E2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB7F01EEDA044539B474474B /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParallaxDemo/ParallaxDemo-Prefix.pch";
@@ -298,6 +393,7 @@
 				2843295B17E20F3600213E2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
