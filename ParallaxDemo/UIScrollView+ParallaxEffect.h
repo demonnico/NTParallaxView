@@ -19,7 +19,7 @@ typedef void (^dragBlock)(CGFloat offsetY);
  *	@param	backgroundView	backgroundView behind
  *	@param	windowHeight	default height of visible area
  *	@param	limitDistance	if you wanna stop drag action by some reason, set limitDistance
- *	@param	factor          (0-1], change the rate of parallax's background view appearing.
+ *	@param	factor          change the rate of parallax's background view appearing, it's better (0-0.5].
  */
 -(void)addBackgroundView:(UIView*)backgroundView
         withWindowHeight:(CGFloat)windowHeight
