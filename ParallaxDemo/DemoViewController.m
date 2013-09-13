@@ -33,10 +33,10 @@
     [self.view addSubview:scrollView];
     
     scrollView.contentSize = CGSizeMake(320, 600);
-    [scrollView addForegroundView:[self getParallaxView]
+    [scrollView addBackgroundView:[self getParallaxView]
                  withWindowHeight:100
                 dragDistanceLimit:DRAG_DISTANCE_LIMIT
-                   parallaxFactor:0.25];
+                   parallaxFactor:0.01];
     
     [scrollView addSubview:self.labelPercent];
     [scrollView addSubview:self.labelTitle];
@@ -49,7 +49,7 @@
                                                            style:UITableViewStylePlain];
     [self.view addSubview:tableView];
     
-    [tableView addForegroundView:[self getParallaxView]
+    [tableView addBackgroundView:[self getParallaxView]
                 withWindowHeight:100
                dragDistanceLimit:0
                   parallaxFactor:0.25];
