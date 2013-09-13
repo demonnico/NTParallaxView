@@ -39,13 +39,26 @@
 {
     self.frame =CGRectMake(self.frame.origin.x,
                            bottom-self.height,
-                           self.height,
-                           self.width);
+                           self.width,
+                           self.height);
 }
 
 -(CGFloat)bottom
 {
     return self.frame.origin.y+self.height;
+}
+
+-(void)setTop:(CGFloat)top
+{
+    self.frame =CGRectMake(self.frame.origin.x,
+                           top,
+                           self.width,
+                           self.height);
+}
+
+-(CGFloat)top
+{
+    return self.frame.origin.y;
 }
 
 @end
