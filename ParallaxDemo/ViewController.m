@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "DemoViewController.h"
 @interface ViewController ()
 
 @end
@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.navigationController.title = @"ParallaxEffectDemo";
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +27,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)showTableView:(id)sender
+{
+    DemoViewController * viewController = [DemoViewController new];
+    [self.navigationController pushViewController:viewController
+                                         animated:YES];
+    [viewController showTableViewParallax];
+}
+
+- (IBAction)showScrollView:(id)sender
+{
+    DemoViewController * viewController = [DemoViewController new];
+    [self.navigationController pushViewController:viewController
+                                         animated:YES];
+    [viewController showScollViewParallax];
+}
 @end

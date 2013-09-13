@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIScrollView+ParallaxEffect.h"
 
 @interface ViewController : UIViewController
+- (IBAction)showTableView:(id)sender;
+- (IBAction)showScrollView:(id)sender;
 
 @end
