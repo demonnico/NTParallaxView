@@ -26,4 +26,4 @@ UIView * parallaxView = [self getParallaxView];
 
 ## License
 
-NTParallaxScrollView is available under the MIT license. See the LICENSE file for more info.
+NTParallaxView is available under the MIT license. See the LICENSE file for more info.
