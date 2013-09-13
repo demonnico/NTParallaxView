@@ -10,7 +10,7 @@
 
 @interface UIScrollView ()
 
-@property(nonatomic,strong) UIView * foregroundView;
+@property(nonatomic,strong) UIView * parallaxBackgroundView;
 @property(nonatomic,strong) UIScrollView * parallaxContainer;
 @property(nonatomic,assign) CGFloat windowHeight;
 @property(nonatomic,assign) CGFloat dragDistanceLimit;
@@ -21,7 +21,7 @@
 
 @implementation UIScrollView (ParallaxEffect)
 
-SYNTHESIZE_CATEGORY_OBJ_PROPERTY(foregroundView, setForegroundView:)
+SYNTHESIZE_CATEGORY_OBJ_PROPERTY(parallaxBackgroundView, setParallaxBackgroundView:)
 SYNTHESIZE_CATEGORY_OBJ_PROPERTY(parallaxContainer, setParallaxContainer:)
 SYNTHESIZE_CATEGORY_VALUE_PROPERTY(CGFloat, windowHeight, setWindowHeight:)
 SYNTHESIZE_CATEGORY_VALUE_PROPERTY(CGFloat, dragDistanceLimit,setDragDistanceLimit:)
@@ -54,7 +54,7 @@ char * finishBlockKey;
     return objc_getAssociatedObject(self, &finishBlockKey);
 }
 
--(void)addForegroundView:(UIView*)foreground
+-(void)addBackgroundView:(UIView*)backgroundView
         withWindowHeight:(CGFloat)windowHeight
        dragDistanceLimit:(CGFloat)limitDistance
           parallaxFactor:(CGFloat)factor
@@ -64,7 +64,7 @@ char * finishBlockKey;
         self.parallaxContainer = [[UIScrollView alloc] initWithFrame:CGRectMake(0,
                                                                                 0,
                                                                                 self.frame.size.width,
-                                                                                foreground.height)];
+                                                                                backgroundView.height)];
         [self addSubview:self.parallaxContainer];
         self.parallaxContainer.backgroundColor = [UIColor clearColor];
         
@@ -74,19 +74,19 @@ char * finishBlockKey;
                   context:NULL];
     }
     
-    if(self.foregroundView)
-        [self.foregroundView removeFromSuperview];
+    if(self.parallaxBackgroundView)
+        [self.parallaxBackgroundView removeFromSuperview];
     
     self.parallaxFactor = factor;
-    self.foregroundView = foreground;
+    self.parallaxBackgroundView = backgroundView;
     self.windowHeight = windowHeight;
     self.dragDistanceLimit = limitDistance;
-    self.parallaxContainer.height = foreground.height;
-    self.parallaxContainer.contentSize = foreground.frame.size;
+    self.parallaxContainer.height = backgroundView.height;
+    self.parallaxContainer.contentSize = backgroundView.frame.size;
     self.parallaxContainer.bottom = windowHeight;
-    foreground.top= (foreground.height-windowHeight)/2;
+    backgroundView.top= (backgroundView.height-windowHeight)/2;
     
-    [self.parallaxContainer addSubview:foreground];
+    [self.parallaxContainer addSubview:backgroundView];
     
     if([self isKindOfClass:[UITableView class]])
     {
@@ -124,9 +124,10 @@ char * finishBlockKey;
     
 	if (old.y==new.y)
 		return;
+    CGFloat absOffsetY = abs(new.y);
     [self contentOffsetUpdate:new.y];
     if(self.draggingBlock)
-        self.draggingBlock(new.y);
+        self.draggingBlock(absOffsetY);
 }
 
 -(void)contentOffsetUpdate:(CGFloat)offsetY;
@@ -134,9 +135,9 @@ char * finishBlockKey;
     if(!self.isDragging&&
        self.finishDragBlock)
     {
-        self.finishDragBlock(offsetY);
+        self.finishDragBlock(abs(offsetY));
     }
-    CGFloat deltaParallax = self.windowHeight-self.foregroundView.height;
+    CGFloat deltaParallax = self.windowHeight-self.parallaxBackgroundView.height;
     if (offsetY > deltaParallax && offsetY < 0.0f) {
         CGFloat offsetParallax = floorf(offsetY*(-self.parallaxFactor));
         self.parallaxContainer.contentOffset = CGPointMake(0.0f, offsetParallax);

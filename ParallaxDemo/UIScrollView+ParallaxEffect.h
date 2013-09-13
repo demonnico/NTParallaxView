@@ -12,7 +12,16 @@
 
 typedef void (^dragBlock)(CGFloat offsetY);
 @interface UIScrollView (ParallaxEffect)
--(void)addForegroundView:(UIView*)foreground
+
+/**
+ *	add parallax effect on UIScrollView obejct.
+ *
+ *	@param	backgroundView	backgroundView behind
+ *	@param	windowHeight	default height of visible area
+ *	@param	limitDistance	if you wanna stop drag action by some reason, set limitDistance
+ *	@param	factor          (0-1], change the rate of parallax's background view appearing.
+ */
+-(void)addBackgroundView:(UIView*)backgroundView
         withWindowHeight:(CGFloat)windowHeight
        dragDistanceLimit:(CGFloat)limitDistance
           parallaxFactor:(CGFloat)factor;
