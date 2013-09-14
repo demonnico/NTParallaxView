@@ -23,11 +23,9 @@
 		28FC6EDD17E2A1FF00EC68C6 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FC6EDC17E2A1FF00EC68C6 /* bg@2x.png */; };
 		28FC6EE217E2AFDA00EC68C6 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6EE017E2AFDA00EC68C6 /* DemoViewController.m */; };
 		28FC6EE317E2AFDA00EC68C6 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28FC6EE117E2AFDA00EC68C6 /* DemoViewController.xib */; };
-		3E40158C2DC542628E47A0A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C78015621814E6CBFDDF7A3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C78015621814E6CBFDDF7A3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2843293617E20F3600213E2F /* ParallaxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2843293917E20F3600213E2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2843293B17E20F3600213E2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,7 +51,6 @@
 		28FC6EDF17E2AFDA00EC68C6 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		28FC6EE017E2AFDA00EC68C6 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		28FC6EE117E2AFDA00EC68C6 /* DemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoViewController.xib; sourceTree = "<group>"; };
-		EB7F01EEDA044539B474474B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +61,6 @@
 				2843293A17E20F3600213E2F /* UIKit.framework in Frameworks */,
 				2843293C17E20F3600213E2F /* Foundation.framework in Frameworks */,
 				2843293E17E20F3600213E2F /* CoreGraphics.framework in Frameworks */,
-				3E40158C2DC542628E47A0A5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +73,6 @@
 				2843293F17E20F3600213E2F /* ParallaxDemo */,
 				2843293817E20F3600213E2F /* Frameworks */,
 				2843293717E20F3600213E2F /* Products */,
-				EB7F01EEDA044539B474474B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +90,6 @@
 				2843293917E20F3600213E2F /* UIKit.framework */,
 				2843293B17E20F3600213E2F /* Foundation.framework */,
 				2843293D17E20F3600213E2F /* CoreGraphics.framework */,
-				1C78015621814E6CBFDDF7A3 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,11 +161,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2843295917E20F3600213E2F /* Build configuration list for PBXNativeTarget "ParallaxDemo" */;
 			buildPhases = (
-				8CF06886B59645419E894638 /* Check Pods Manifest.lock */,
 				2843293217E20F3600213E2F /* Sources */,
 				2843293317E20F3600213E2F /* Frameworks */,
 				2843293417E20F3600213E2F /* Resources */,
-				49C9012C5D20450BADBFBBFD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,39 +216,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		49C9012C5D20450BADBFBBFD /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8CF06886B59645419E894638 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2843293217E20F3600213E2F /* Sources */ = {
@@ -352,11 +311,11 @@
 		};
 		2843295A17E20F3600213E2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB7F01EEDA044539B474474B /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParallaxDemo/ParallaxDemo-Prefix.pch";
 				INFOPLIST_FILE = "ParallaxDemo/ParallaxDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -364,11 +323,11 @@
 		};
 		2843295B17E20F3600213E2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB7F01EEDA044539B474474B /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParallaxDemo/ParallaxDemo-Prefix.pch";
 				INFOPLIST_FILE = "ParallaxDemo/ParallaxDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
