@@ -4,7 +4,7 @@
 
 ##What did i do
 
-* it's just a instance method of UIScrollView's category, so we can add the parallax effect naturally.
+* It's just a instance method of UIScrollView's category, so we can add the parallax effect naturally.
 
 ##How To Use
 
