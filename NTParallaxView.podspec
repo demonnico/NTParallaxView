@@ -4,6 +4,4 @@ Pod::Spec.new do |s|
         s.summary = 'Parallax Effect For UITableView'
         s.source_files = 'ParallaxDemo/NTParallaxView/*.{h.m}'
         s.requires_arc = true
-	s.prefix_header_contents = <<-EOS
-EOS
 end
