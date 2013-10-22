@@ -18,8 +18,8 @@
 		2843295017E20F3600213E2F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2843294F17E20F3600213E2F /* Default-568h@2x.png */; };
 		2843295317E20F3600213E2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2843295217E20F3600213E2F /* ViewController.m */; };
 		2843295617E20F3600213E2F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2843295417E20F3600213E2F /* ViewController.xib */; };
-		2843295F17E20F7500213E2F /* UIScrollView+ParallaxEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2843295E17E20F7500213E2F /* UIScrollView+ParallaxEffect.m */; };
-		2843296617E213B800213E2F /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 2843296517E213B800213E2F /* UIView+Util.m */; };
+		28C305171816C251006E6EA8 /* UIScrollView+ParallaxEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C305141816C251006E6EA8 /* UIScrollView+ParallaxEffect.m */; };
+		28C305181816C251006E6EA8 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C305161816C251006E6EA8 /* UIView+Util.m */; };
 		28FC6EDD17E2A1FF00EC68C6 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FC6EDC17E2A1FF00EC68C6 /* bg@2x.png */; };
 		28FC6EE217E2AFDA00EC68C6 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6EE017E2AFDA00EC68C6 /* DemoViewController.m */; };
 		28FC6EE317E2AFDA00EC68C6 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28FC6EE117E2AFDA00EC68C6 /* DemoViewController.xib */; };
@@ -42,11 +42,11 @@
 		2843295117E20F3600213E2F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2843295217E20F3600213E2F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2843295517E20F3600213E2F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		2843295D17E20F7500213E2F /* UIScrollView+ParallaxEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ParallaxEffect.h"; sourceTree = "<group>"; };
-		2843295E17E20F7500213E2F /* UIScrollView+ParallaxEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ParallaxEffect.m"; sourceTree = "<group>"; };
-		2843296017E20F9800213E2F /* CategoryPropertyUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryPropertyUtil.h; sourceTree = "<group>"; };
-		2843296417E213B800213E2F /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
-		2843296517E213B800213E2F /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
+		28C305121816C251006E6EA8 /* CategoryPropertyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryPropertyUtil.h; sourceTree = "<group>"; };
+		28C305131816C251006E6EA8 /* UIScrollView+ParallaxEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ParallaxEffect.h"; sourceTree = "<group>"; };
+		28C305141816C251006E6EA8 /* UIScrollView+ParallaxEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ParallaxEffect.m"; sourceTree = "<group>"; };
+		28C305151816C251006E6EA8 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
+		28C305161816C251006E6EA8 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
 		28FC6EDC17E2A1FF00EC68C6 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
 		28FC6EDF17E2AFDA00EC68C6 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		28FC6EE017E2AFDA00EC68C6 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
@@ -70,6 +70,7 @@
 		2843292D17E20F3600213E2F = {
 			isa = PBXGroup;
 			children = (
+				28C305111816C251006E6EA8 /* NTParallaxView */,
 				2843293F17E20F3600213E2F /* ParallaxDemo */,
 				2843293817E20F3600213E2F /* Frameworks */,
 				2843293717E20F3600213E2F /* Products */,
@@ -97,8 +98,6 @@
 		2843293F17E20F3600213E2F /* ParallaxDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2843296717E2149600213E2F /* Helper */,
-				2843295C17E20F4300213E2F /* UIScrollView+ParallaxEffect */,
 				2843294817E20F3600213E2F /* AppDelegate.h */,
 				2843294917E20F3600213E2F /* AppDelegate.m */,
 				28FC6EDE17E2AFBB00EC68C6 /* Demo */,
@@ -122,23 +121,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2843295C17E20F4300213E2F /* UIScrollView+ParallaxEffect */ = {
+		28C305111816C251006E6EA8 /* NTParallaxView */ = {
 			isa = PBXGroup;
 			children = (
-				2843295D17E20F7500213E2F /* UIScrollView+ParallaxEffect.h */,
-				2843295E17E20F7500213E2F /* UIScrollView+ParallaxEffect.m */,
+				28C305121816C251006E6EA8 /* CategoryPropertyUtil.h */,
+				28C305131816C251006E6EA8 /* UIScrollView+ParallaxEffect.h */,
+				28C305141816C251006E6EA8 /* UIScrollView+ParallaxEffect.m */,
+				28C305151816C251006E6EA8 /* UIView+Util.h */,
+				28C305161816C251006E6EA8 /* UIView+Util.m */,
 			);
-			name = "UIScrollView+ParallaxEffect";
-			sourceTree = "<group>";
-		};
-		2843296717E2149600213E2F /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				2843296017E20F9800213E2F /* CategoryPropertyUtil.h */,
-				2843296417E213B800213E2F /* UIView+Util.h */,
-				2843296517E213B800213E2F /* UIView+Util.m */,
-			);
-			name = Helper;
+			name = NTParallaxView;
+			path = ParallaxDemo/NTParallaxView;
 			sourceTree = "<group>";
 		};
 		28FC6EDE17E2AFBB00EC68C6 /* Demo */ = {
@@ -225,9 +218,9 @@
 				2843294617E20F3600213E2F /* main.m in Sources */,
 				2843294A17E20F3600213E2F /* AppDelegate.m in Sources */,
 				2843295317E20F3600213E2F /* ViewController.m in Sources */,
-				2843295F17E20F7500213E2F /* UIScrollView+ParallaxEffect.m in Sources */,
-				2843296617E213B800213E2F /* UIView+Util.m in Sources */,
 				28FC6EE217E2AFDA00EC68C6 /* DemoViewController.m in Sources */,
+				28C305171816C251006E6EA8 /* UIScrollView+ParallaxEffect.m in Sources */,
+				28C305181816C251006E6EA8 /* UIView+Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
