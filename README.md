@@ -2,6 +2,7 @@
 
 * It helps you create a tableview(scrollview) with parallax effect, much like the top view of Path's timeline, by a easier way.
 
+![](https://raw.github.com/demon1105/ImagesLib/master/demo_parallaxview.gif)
 ##What did i do
 
 * It's just a instance method of UIScrollView's category, so we can add the parallax effect naturally.
