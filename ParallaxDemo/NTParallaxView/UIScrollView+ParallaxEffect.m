@@ -108,12 +108,6 @@ char * finishBlockKey;
     }
 }
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    scrollView.contentOffset = CGPointMake(scrollView.contentOffset.x, 0);
-    self.contentOffset = CGPointMake(0, scrollView.contentOffset.y);
-}
-
 - (void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(id)object
                         change:(NSDictionary *)change
