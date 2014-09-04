@@ -1,3 +1,7 @@
+
+####
+[Here](https://github.com/jamztang/CSStickyHeaderFlowLayout) is a better implemetation.  
+
 ##Why Use It
 
 * It helps you create a tableview(scrollview) with parallax effect, much like the top view of Path's timeline, by a easier way.
