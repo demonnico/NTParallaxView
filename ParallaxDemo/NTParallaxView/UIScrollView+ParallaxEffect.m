@@ -61,10 +61,13 @@ char * finishBlockKey;
 {
     if(!self.parallaxContainer)
     {
+        //In case the image width is more than the width of screen or view
+        // we can use backroundView.width
         self.parallaxContainer = [[UIScrollView alloc] initWithFrame:CGRectMake(0,
                                                                                 0,
-                                                                                self.frame.size.width,
+                                                                                backgroundView.width,
                                                                                 backgroundView.height)];
+        
         [self addSubview:self.parallaxContainer];
         self.parallaxContainer.backgroundColor = [UIColor clearColor];
         
