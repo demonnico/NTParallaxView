@@ -26,7 +26,7 @@ UIView * parallaxView = [self getParallaxView];
 
 ```
 
-##Creator
+## Creator
 [Nicholas Tau](http://www.taofengping.com)
 
 ## License
