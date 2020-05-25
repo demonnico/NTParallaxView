@@ -2,7 +2,7 @@
 ####
 [Here](https://github.com/jamztang/CSStickyHeaderFlowLayout) is a better implemetation.  
 
-##Why Use It
+## Why Use It
 
 * It helps you create a tableview(scrollview) with parallax effect, much like the top view of Path's timeline, by a easier way.
 
@@ -11,7 +11,7 @@
 
 * It's just a instance method of UIScrollView's category, so we can add the parallax effect naturally.
 
-##How To Use
+## How To Use
 
 ```
 //we get a tableView here, of course, any kind of UIScrollView class's object is fine.
@@ -27,7 +27,7 @@ UIView * parallaxView = [self getParallaxView];
 ```
 
 ##Creator
-[Nicholas Tau](http://www.taofengping.com) ([@demonNico](https://twitter.com/demonnico))
+[Nicholas Tau](http://www.taofengping.com)
 
 ## License
 
